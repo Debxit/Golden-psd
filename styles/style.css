@@ -6,10 +6,10 @@ html {
     padding: 0;
 }
 body{
-    margin: 0 0 100px; /* bottom = footer height */
+   /* margin: 0 0 100px; /* bottom = footer height */
     padding: 0;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
-   
+    background: #ffffff;
 }
 
 
@@ -39,10 +39,11 @@ body{
 
 .nav{
   float: right;
+  max-width: 575px;
 }
 .nav li{
   float: left;
-  margin-right: 40px; 
+  margin-right: 10px; 
 }
 
 .nav li:last-child{
@@ -89,4 +90,32 @@ body{
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+}
+#services{
+  height: 570px;
+  padding-top: 110px;
+  text-align: center;
+}
+#services h1{
+  text-transform: uppercase;
+  font: bold 40px/40px Arial, sans-serif;
+  margin-bottom: 10px;
+}
+#services h4{
+  font: 16px "Times New Roman", serif;
+  margin-bottom: 75px;
+}
+#services h3{
+  font: bold 18px Arial, sans-serif; 
+  margin-bottom: 10px;
+} 
+#services p{
+   font: 18px "Times New Roman", serif;
+}
+
+.logo-small {
+      font-size: 50px;
+}
+div .e-commerce{
+  background-image: url('../images/e-commerce.png');
 }
