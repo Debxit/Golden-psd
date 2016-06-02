@@ -33,9 +33,10 @@ body{
   top: 20px;
   width: 100%;
 }
-.logo{
-  float: left;
-  padding-top: 5px; 
+.navbar{
+  background-color: transparent;
+  border: none;
+  z-index: 9999;
 }
 
 .nav{
@@ -48,17 +49,24 @@ body{
 }
 
 .nav li:last-child{
-  margin: 0px;
+  margin: 5px;
 }
-.nav a{
+.navbar .nav li a{
   text-transform: uppercase;
   font: 14px Arial, sans-serif;
   color:#fff;
 }
 
 .nav a:hover{
-  color:#fed136;
+  background: transparent !important;
+  color:#fed136 !important;
 }
+.navbar-inverse .navbar-nav>.active>a{
+  background-color: transparent !important;
+  color: #e3af02 !important;
+  text-decoration: underline;
+}
+
 #home{
   min-height: 700px;
   padding-top: 270px;
@@ -167,7 +175,7 @@ font: bold 16px Arial, sans-serif;
   font: 14px Arial, sans-serif;
   margin-bottom: 5px;
 }
-#team a{
+ a{
   text-decoration: none;
 }
 .fa{
@@ -206,11 +214,6 @@ font: bold 16px Arial, sans-serif;
 
 }
 
-#messege .left,
-#messege .right{
-  display: inline-block;
-  width: 48%;
-}
 
 #messege input[type="text"],
 #messege textarea{
@@ -243,4 +246,18 @@ text-transform: uppercase;
 font: bold 14px/14px Arial, sans-serif ;
 color: #bbb;
 text-transform: uppercase;
+}
+
+footer{
+  min-height: 90px;
+}
+
+footer .row{
+padding-top: 20px;
+}
+
+footer p {
+ 
+  padding-top: 15px; 
+  font: 14px Arial, sans-serif;
 }
